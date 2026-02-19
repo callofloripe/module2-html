@@ -1,90 +1,62 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    front-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    padding: 20px;
+    transition: 0.3s;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
 }
 
 .card {
-    background: #ffffff;
+    background: white;
     padding: 20px;
+    margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0px 5px rgba(0,0,0,0.1);
-}
-
-h1 {
-   text-align: center;
-   margin-bottom: 10px; 
-}
-h2 {
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-p {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-ul { 
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-a {
-    text-decoration: none;
-    color: #0077cc;
-}
-
-a:hover {
-    color: #005fa3;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin_top: 10px;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
-}
-
-th {
-    background-color: #0077cc;
-    color: white;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 button {
-    padding: 8px;
-    background-color: #0077cc;
-    color: white;
+    padding: 8px 15px;
     border: none;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #005fa3;
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    text-align: center;
 }
